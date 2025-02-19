@@ -1,0 +1,205 @@
+h1,h2,h3{
+        margin: 0;
+            padding: 0;
+}
+.containerr{
+    height: 100vh;
+    display: flex;
+    background-color: hsl(60deg 10% 96.08%);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.containerr .login_Register{
+  
+    width: 70vh;
+    height: fit-content;
+    background-color: hsl(0deg 0% 100%);
+   
+     position: relative;
+     z-index: 5;
+     border-radius: 20px;
+     margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.containerr .login_Register form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+}
+.login_Register input{
+    padding: 14px 15px;
+        width: 70%;
+        border-radius: 4px;
+        z-index: 7;
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px inset;
+        border: none;
+        outline: navajowhite;
+        border-bottom: 2px solid black;
+        margin-bottom: 6px;
+          
+}
+.containerr .login_Register label{
+align-self: self-start;
+    margin-left: 10%;
+    margin-bottom: 11px;
+    margin-top: 6px;
+    color: #415A77;
+    position: relative;
+    z-index: 6;    
+
+    transition: all 0.5s;
+    font-size: 18px;
+    top: 39px;
+        right: -40px;
+}
+
+.containerr .login_Register .type{  
+    align-self: self-start;
+    font-family: "DynaPuff", serif;
+    color: #1B263B;
+    position: absolute;
+    top: 3%;
+    left: -10%;
+    transform: translate(50%,-50%);
+    z-index: 100;
+    margin-top: 15px;
+
+}
+.containerr .login_Register .typeLogin{
+    left: 0;
+}
+.containerr .login_Register button{
+   
+        padding: 11px 27px;
+        color: white;
+        background-color: #0D1B2A;
+        border:2px solid transparent;
+        cursor: pointer;
+        border-radius: 16px;
+        align-self: self-start;
+         margin-top: 5%;
+        font-family: "DynaPuff", serif;
+        transition: all 0.5s;
+            align-self: center;
+}
+
+.containerr .login_Register button:hover{
+  transform: scale(1.2);
+}
+.login_Register input:focus:valid {
+    border-bottom:4px solid green;
+}
+.login_Register input:focus:not(:valid) {
+    border-bottom: 4px solid red;
+}
+.login_Register input.name:focus:not(:valid)+label.name,
+.login_Register input.name:focus:valid + label.name {
+top: 0;
+    right: -3%;
+}.login_Register input.email:focus:not(:valid)+label.email,
+.login_Register input.email:focus:valid+label.email {
+top: 0;
+    right: -3%;
+}.login_Register input.pass:focus:not(:valid)+label.pass,
+.login_Register input.pass:focus:valid+label.pass {
+top: 0;
+    right: -3%;
+}
+.login_Register label.emaillogin,
+.login_Register label.name{
+    order: 1;
+
+    margin-top: 15%;
+}
+.login_Register input.name {
+    order: 2;
+
+}
+.login_Register label.email{
+    order: 3;
+
+}
+.login_Register input.email {
+    order: 4;
+
+}
+.login_Register label.pass {
+    order: 5;
+ 
+}.login_Register input.pass {
+    order: 6;
+
+}
+button.register{
+order: 7;
+}
+a.tologin{
+   align-self: flex-end;
+    bottom: 11%;
+    /* font-size: 10px !important; */
+    color: #0D1B2A;
+    font-family: "DynaPuff", serif;
+    position: relative;
+   text-decoration: none;
+    right: 4px;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 10px;
+        display: block;
+            text-align: end;
+            margin: 0px 14px;
+        
+
+}
+
+a.tologin i{
+    margin-left: 2px;
+    padding: 10px;
+    display: inline-block;
+}
+@media(min-width:280px){
+a.tologin{
+
+}
+}
+.orlogin{
+    text-align: center;
+    display: block;
+}
+.orlogin{
+    padding: 15px 0px;
+}
+.optionLogin{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.optionLogin .google,
+.optionLogin .facebook{
+
+    border-radius: 50%;
+  
+  
+
+}
+.cont_logo{
+    display: flex;
+    gap: 15px;
+}
+.optionLogin .google{
+
+}
+.optionLogin img{
+    width: 40px;
+margin: 0;
+
+border-radius: 50%;
+    
+}

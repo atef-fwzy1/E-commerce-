@@ -1,0 +1,45 @@
+
+
+ .boxCounter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid #777;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.boxCounter span {
+    padding: 6px 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.boxCounter span.two {
+   
+    padding: 6px 12px;
+
+}
+
+.boxCounter span.one{
+    border-right: 1px solid #777;
+}
+.boxCounter span.three {
+    border-left: 1px solid #777;
+}
+.boxCounter span.one:hover
+{
+    background-color: #82ca9c;
+    color: white;
+}
+.boxCounter span.three:hover{
+    background-color: #e81515c8;
+        color: white;
+}
+
+
+
+.cartSection.prodTotal i {
+    cursor: pointer;
+}

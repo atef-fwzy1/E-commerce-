@@ -1,0 +1,40 @@
+.CartBox .counter {}
+
+.CartBox .counter .boxCounter {
+    display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border: 2px solid #777;
+        border-radius: 12px;
+        overflow: hidden;
+}
+
+.boxCounter span {
+    padding: 6px 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+   
+}
+.boxCounter span.two{
+    border-right: 2px solid #777;
+        border-left: 2px solid #777;
+        padding: 6px 12px;
+    
+    }
+    .boxCounter span.one:hover,
+    .boxCounter span.three:hover{
+        background-color: #82ca9c;
+   
+            color: white;
+}
+
+@media(max-width:630px)
+{
+    .cart .items .infoWrap {
+            display: flex;
+           
+        }
+}
+  .cartSection.prodTotal i {
+      cursor: pointer;
+  }

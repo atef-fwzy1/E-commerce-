@@ -1,0 +1,62 @@
+#PaymentForm{
+height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  width: fit-content;
+  margin: auto;
+  z-index: 6546546546;
+  padding: 0pc 17px;
+  background-color: white;
+   border-radius: 10px;
+}
+.rccs__expiry__value {
+  font-family: "Consolas", "Courier", monospace;
+  font-size: 16px;
+  right: -75%;}
+.rccs__card{
+  margin-top: 10px;
+}
+#PaymentForm .cloumn{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.rccs--focused {
+  font-weight: 700;
+  opacity: 1 !important;
+  left: 25px;}
+#PaymentForm div.rowws{
+      margin-top: 12px;
+}
+#PaymentForm div.rowws input:nth-child(1){
+  margin-right: 5px;
+}
+#PaymentForm input{
+transition: all 0.5s;
+  padding: 6px 3px;
+}
+#PaymentForm input:focus{
+  outline: none;
+  border: 2px solid #0d6dfd7e;
+}
+.Boxdeposit{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 70px);
+  background-color: #6b6b6b63;
+}
+.Boxdeposit::after{
+    content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #dacaca8a;
+      width: 100%;
+      width: 100%;
+      
+}

@@ -1,0 +1,48 @@
+/* Basic styling for the alert box */
+.alert {
+    padding: 15px;
+        background-color: #4CAF50;
+        color: white;
+        margin-bottom: 15px;
+        position: fixed;
+        border-radius: 5px;
+        top: 15%;
+     
+       display: none;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 5px;
+        z-index: 4444444444;
+        width: 306px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        transition: all 2s;
+}
+/* Close button styling */
+.close-btn {
+
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover effect for close button */
+.close-btn:hover {
+    color: black;
+}
+.closed{
+right: 30px;
+display: flex;
+}
+
+.made{
+left: 130%;
+transition: all 2s;
+display: flex;
+}

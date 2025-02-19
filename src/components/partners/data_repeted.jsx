@@ -1,0 +1,32 @@
+export  const data_repeted = [ {
+   url:"https://img.freepik.com/free-vector/eagle-flying-logo-abstract-design-falcon-hawk-wings-logotype_126523-2801.jpg?t=st=1739896743~exp=1739900343~hmac=0aafc2dd531c740c584e5eebf6b9d54715cffd64ce0a47d3a6c083ea34ef7540&w=1060"
+},{
+   url:"https://img.freepik.com/free-vector/abstract-logo-flame-shape_1043-44.jpg?t=st=1739896369~exp=1739899969~hmac=2c4d9bec6c37fcd0edbc7718ef61f5d17fb4855aae51ea31513bce9d4ba71ee7&w=740"
+}
+,{
+   url:"https://c4.wallpaperflare.com/wallpaper/1020/839/761/mercedes-benz-logo-wallpaper-preview.jpg"
+},
+{
+   url:"https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?t=st=1739896608~exp=1739900208~hmac=787e7182d54cd33ee246df8a004b39c1ddf094b19fbc627ddcee0e1df3811cd8&w=740"
+},
+{
+   url:"https://img.freepik.com/free-vector/letter-p-logo-corporate-business-technology-logo_126523-2814.jpg?t=st=1739896767~exp=1739900367~hmac=c6a95d1277e4c9a4bfd09e05274df8210441785507f0e0e22983d6be9b8f97e6&w=1060"
+},{
+   url:"https://c4.wallpaperflare.com/wallpaper/114/631/730/logo-emblem-propeller-wallpaper-preview.jpg"
+},{
+   url:"https://img.freepik.com/free-vector/letter-t-colorful-gradient-logo-design_474888-2228.jpg?t=st=1739896815~exp=1739900415~hmac=3adf95fb523fb5d69c4aa48e77d8f9e2e7388ea411191878c9cdbb0306b8cfb1&w=740"
+},{
+   url:"https://img.freepik.com/free-vector/cloud-colorful-gradient-logo-design_474888-2114.jpg?t=st=1739896843~exp=1739900443~hmac=8fdb97ed9d59b5515023f08d3e962f31a1a4ae42881bd6fdcb1621167c7b1c60&w=740"
+},{
+   url:"https://media.istockphoto.com/id/1201144331/vector/icon-design-element-logo-for-technology-innovation-company-tech-icon-and-symbol.jpg?s=1024x1024&w=is&k=20&c=SnBcv-Z87V7eSE-OPY4W5m26_dYQfgZJGG3prJAwJYg="
+},{
+   url:"https://img.freepik.com/free-vector/gradient-abstract-logo-flat-design_23-2148203400.jpg?t=st=1739896938~exp=1739900538~hmac=f0882975170afa4cef1f5ed32ac9ea3d75caa1f5af48e010d5de96792a57bf3f&w=740"
+},{
+   url:"https://img.freepik.com/free-vector/corporative-logo-design_1057-541.jpg?t=st=1739896960~exp=1739900560~hmac=a29e641e20a412d6c586938be68a4bbf7f14d88713362d41ec0f48349587859f&w=740"
+},{
+   url:"https://img.freepik.com/free-vector/abstract-logo-triangular-shape_1043-1.jpg?t=st=1739897246~exp=1739900846~hmac=30b44f42b628ec0f3898da5263606798ace7435d195586224de41c7c91d49e4d&w=740"
+},{
+   url:"https://img.freepik.com/free-vector/jumper-logo-template_23-2147503857.jpg?t=st=1739897290~exp=1739900890~hmac=9f0ab182c24a4a9d4aa49927d97f285712a13433bcba8d3361f2dc576dc1fb42&w=740"
+}
+
+]

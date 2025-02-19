@@ -1,0 +1,9 @@
+.page_404{
+    width: 80%;
+    margin: left;
+    background-color: brown;
+    text-align: center;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}

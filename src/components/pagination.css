@@ -1,0 +1,23 @@
+.pagination{
+        display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 15px;
+            margin-top: 46px;
+            width: 40vh;
+            margin: 0;
+}
+.pagination i:hover{
+   color: #050C9C;
+   scale: 1.2;
+   cursor: pointer;
+}
+.pagination span{
+    width: 30px;
+        background-color: #0d6efd;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
+}

@@ -1,0 +1,85 @@
+.dashboard{
+     margin-top: 20px;
+    width: 100%;
+min-height: calc(100% - 70px);
+    display: flex;
+     flex-wrap: wrap;
+}
+.dashboard .Updateuers,
+.dashboard .users {
+    height: fit-content;
+    overflow-y: scroll;
+    text-align: center;
+    padding: 5px;
+    flex-grow: 1;
+      width: 78%;
+  
+}
+
+.dashboard .Updateuers .primary{
+    margin: auto;
+ 
+    display: block;
+}
+.dashboard .Updateuers{
+    text-align: start;
+    padding: 2% 10%;
+    height: fit-content;
+
+    overflow: hidden;
+}
+.dashboard .cont_sides{
+display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    gap: 15px;
+
+    align-items: center;
+    justify-content: center;
+
+}
+.dashboard .Updateuers  .loderdiv{
+padding: 3px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: progress;
+}
+.dashboard .users .actions i{
+    color: #0d6efd;
+}
+.dashboard .users .actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 20px;
+}
+.dashboard .users .actions i{
+     cursor: pointer;
+
+ }
+ .dashboard .users .actions i:nth-child(2){
+    color: red;
+ }
+.userstype{
+    text-align: center;
+    position: relative;
+    top: 0;
+    color: #240750;
+}
+.action{
+    margin-top: 10px;
+    padding: 15px;
+    display: flex;
+        align-items: center;
+        justify-content: space-between
+}
+/* .dateNoMobile{
+    display: none;
+}
+.emailNoMobile{
+    display: none;
+} */
+

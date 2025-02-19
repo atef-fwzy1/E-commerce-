@@ -1,0 +1,9 @@
+.contpaginetion{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 30px;
+}
+.selectLimet{
+    width: 20vh;
+}

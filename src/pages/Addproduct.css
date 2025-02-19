@@ -1,0 +1,162 @@
+.addproduct .images{
+    margin: 10px 0px;
+    display: flex;
+     padding-top: 30px;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.progress {
+    width: 95%;
+    height: 10px;
+   
+    border-radius: 15px;
+    overflow: visible;
+    position: absolute;
+        bottom: 0px;
+        left:2.5%;
+    margin-bottom: 2px;
+    background-color: rgb(131, 127, 127);
+}
+.progress .area{
+position: relative;
+    width: 10%;
+    height: 100%;
+    background-color: #050C9C;
+    border-radius: 15px;
+}
+.progress .area::after{
+    content: attr(valueProgres);
+        background-color: #213555;
+        top: -20px;
+        right: 0px;
+        border-radius: 15px;
+        position: absolute;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: wheat;
+}
+.addproduct .images .image_cont{
+    display: flex;
+  align-items: center;
+  padding: 10px 5px 20px 20px;
+     gap: 20px;
+    height: 17vh;
+     flex-direction: row;
+     border: 2px solid darkgray;
+     position: relative;
+   border-radius: 15px;
+   overflow: hidden;
+}
+.addproduct .focus_input{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dotted #050C9C;
+    color: #050C9C;
+    text-align: center;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.addproduct .focus_input div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.addproduct .focus_input div i{
+    font-size: 50px;
+}
+.addproduct .focus_input div span{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.addproduct .images .image_cont .size{
+
+
+    background-color: #050C9C;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 11px; 
+    margin: 10px 0px;
+    display: block;
+    width: fit-content;
+}
+.addproduct .images .image_cont h2{
+    font-size: 14px;
+}
+.addproduct .images .image_cont img{
+    width: 80px;
+
+}
+
+.addproduct .deleteImage{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: red;
+    transition: all 0.5s;
+    cursor:pointer;
+    font-size: 20px;
+
+}
+.addproduct .deleteImage:hover{
+    transform: scale(1.2);
+}
+.Updateproduct .images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.Updateproduct .images .Updateimage_cont{
+    border: none;
+    width: fit-content;
+    margin: 3px;
+    padding: 0;
+    position: relative;
+    display: block;
+    height: fit-content;
+}
+.Updateproduct .images .Updateimage_cont::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000052;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.Updateproduct .images .Updateimage_cont:hover::after{
+    opacity: 1;
+}
+.Updateproduct .images  img{
+width: 20vh !important;
+border-radius: 5px;
+}
+.Updateproduct .images .size{
+    position: absolute;
+     top: 50%;
+    right: -15%;
+    transform: translate(50%,-50%);
+    transition: all 0.7s;
+    background-color: transparent !important;
+    font-size: 20px !important;
+    color: red !important;
+    cursor: pointer;
+    z-index: 44444;
+}
+
+.Updateproduct .images .Updateimage_cont:hover .size{
+    right: 50%;
+
+}

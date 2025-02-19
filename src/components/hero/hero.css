@@ -1,0 +1,40 @@
+.hero_section {
+position: relative;
+}
+.hero_section .hero-cont{
+           position: relative;
+        height: 56vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-left:40px;
+}
+.hero_section .hero-cont .home-serach{
+    position: absolute;
+    z-index: 554;
+    top: 20px;
+    right: 20px;
+}
+.hero_section .hero-cont::after{
+    content: "";position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000059;
+    
+}
+.hero_section .hero-cont .box{
+    position: relative;
+    z-index: 4;
+    width: 60%;
+    height: fit-content;
+}
+.hero_section .hero-cont .box .heder{
+margin-bottom: 20px;
+color: white;
+}
+

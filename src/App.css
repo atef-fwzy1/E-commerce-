@@ -1,0 +1,23 @@
+/* .dateNoMobile{
+    display: none;
+}
+.emailNoMobile{
+    display: none;
+} */
+
+@media(max-width:570px){
+.dateNoMobile {
+        display: none;
+    }
+}@media(max-width:805px){
+.emailNoMobile {
+        display: none;
+    }
+
+    
+}
+
+
+.form-label{
+    display: none;
+}

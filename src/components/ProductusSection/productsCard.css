@@ -1,0 +1,233 @@
+/* Import Fonst */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-color: #f4f4f4;
+    --card-bg-color: #fff;
+    --star-gray: #e3e3dd;
+    --color-1: #31C8A5;
+    --color-1-dark: #248b73;
+    --color-2: #F95932;
+    --color-2-dark: #d74622;
+    --color-3: #FDA929;
+    --color-3-dark: #cf8616;
+    --text-color: #31363D;
+    --primary-font: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--text-color);
+}
+
+
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--body-color);
+}
+
+/* Start Main Styles */
+section#products {
+    width: 100%;
+        padding: 20px 0;
+         gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+     justify-content: center;
+}
+.card{
+
+    position: relative;
+}
+.card .starBox{
+    top: 10px;
+        right: 10px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+}
+.card .starBox::after{
+    content:attr(refargoment);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+font-size: 12px;
+    transform: translate(50%,-50%);
+    
+}
+.card  .golden{
+    color: gold;
+   font-size: 25px;
+}
+section#products .card {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    background: var(--card-bg-color);
+    box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.4);
+    border-radius: .75rem;
+    overflow: hidden;
+     margin: 0;
+        width: 100% !important;
+        height: 100% !important;
+     
+}
+
+section#products .card div.img {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+section#products .card div.img::after {
+    content: "";
+    width: 40%;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    filter: blur(15px);
+}
+
+section#products .card div.img img {
+    height: 91%;
+    transition: all .5s;
+}
+
+section#products .card:hover div.img img {
+    transform: scale(1.2);
+    height: 120px;
+}
+
+section#products .card:nth-child(2) div.img img {
+    transform: scaleX(-1) rotate(20deg);
+}
+
+section#products .card:hover:nth-child(2) div.img img {
+    transform: scaleX(-1) rotate(20deg) scale(1.2);
+}
+
+section#products .card div.text {
+    padding:8px 17px;
+}
+
+section#products .card div.text h3 {
+font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+section#products .card div.text p {
+    font-size:12px;
+    margin-bottom: 20px;
+    opacity: .75;
+}
+
+section#products .card div.text h5 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: var(--color-1);
+}
+
+section#products .card:nth-child(2) {
+
+    order: 2;
+
+}
+
+section#products .card:nth-child(2) div.text h5 {
+    color: var(--color-2);
+}
+
+section#products .card:nth-child(3) div.text h5 {
+    color: var(--color-3);
+}
+
+
+
+
+
+section#products .card div.rating i{
+    color: var(--star-gray);
+}
+section#products .card div.rating i.golden {
+    color: var(--color-3);
+}
+
+
+
+
+
+section#products .card div.btn {
+    border: none;
+}
+
+section#products .card div.btn button {
+border-radius: 21px;
+    font-size: 12px;
+    display: block;
+    width: fit-content;
+    outline: none;
+    border: none;
+    background: var(--color-1);
+    color: #fff;
+    padding: 11px 11px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: backgorund .4s;
+    margin: auto;
+    font-size: 11px;
+    
+}
+
+section#products .card:nth-child(2) div.btn button {
+    background: var(--color-2);
+}
+
+section#products .card:nth-child(3) div.btn button {
+    background: var(--color-3);
+}
+
+section#products .card div.btn button:hover {
+    background: var(--color-1-dark);
+}
+
+section#products .card:nth-child(2) div.btn button:hover {
+    background: var(--color-2-dark);
+}
+
+section#products .card:nth-child(3) div.btn button:hover {
+    background: var(--color-3-dark);
+}
+.price {
+    display: flex;
+        justify-content: center;
+        gap: 10px
+}
+.Prod_cont .latest{
+    color:#27374D;
+    padding:15px ;
+}
