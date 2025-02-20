@@ -44,6 +44,7 @@ export default function AddProuducts(){
             )
         })
         function HandelChange(ele){
+          console.log(Inputs)
             SetInputs({...Inputs,[ele.target.name]:ele.target.value});
             if(!sent){
               setSent(true)
@@ -185,7 +186,7 @@ export default function AddProuducts(){
 
        <Form.Group key={14550} className="mb-3" controlId="formBasicPassword">
         <Form.Label>price</Form.Label>
-        <Form.Control disabled={!sent} value={Inputs.price} onChange={(event)=>{HandelChange(event)}} name='stock' type="text" placeholder="Enter stock" />
+        <Form.Control disabled={!sent} value={Inputs.stock} onChange={(event)=>{HandelChange(event)}} name='stock' type="text" placeholder="Enter stock" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
       </Form.Group>
