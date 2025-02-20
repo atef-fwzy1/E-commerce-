@@ -9,7 +9,7 @@ export default function Menuu({openMenu}){
   },[openMenu])
     const [categories,setcategories] = useState([])
     useEffect(()=>{
-    axios.get("http://127.0.0.1:8000/api/categories").then((data)=>{
+    axios.get("https://e-commerce-backend-production-6372.up.railway.app/api/categories").then((data)=>{
         setcategories(data.data.reverse())})
         
     },[])

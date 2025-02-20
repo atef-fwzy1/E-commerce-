@@ -11,7 +11,7 @@ export default function RequireAuth({AlloudRole=[], AuthCookie}){
     const[user,setuser]=useState("");
     useEffect(()=>{
 
-      axios.get("http://127.0.0.1:8000/api/user",{
+      axios.get("https://e-commerce-backend-production-6372.up.railway.app/api/user",{
         headers:{
           Authorization:"Bearer " + cookie.get("cookie")
         }

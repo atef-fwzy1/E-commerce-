@@ -22,7 +22,7 @@ export default function Users(){
  
     useEffect(()=>{
           const token = cookie.get("cookie")
-       axios.get("http://127.0.0.1:8000/api/user",{
+       axios.get("https://e-commerce-backend-production-6372.up.railway.app/api/user",{
         headers:{
             Authorization:"Bearer " +token
         }
@@ -47,7 +47,7 @@ function HandelDelete(id){
 
     useEffect(()=>{
           const token = cookie.get("cookie")
-       axios.get("http://127.0.0.1:8000/api/users",{
+       axios.get("https://e-commerce-backend-production-6372.up.railway.app/api/users",{
         headers:{
             Authorization:"Bearer " +token
         }

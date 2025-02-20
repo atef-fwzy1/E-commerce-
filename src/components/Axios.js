@@ -5,9 +5,9 @@ const cookie = Cookie();
     const token = cookie.get("cookie");
 export const Axios = axios.create(
    {
-    baseURL:"http://127.0.0.1:8000/api",
+    baseURL:"https://e-commerce-backend-production-6372.up.railway.app/api",
     headers:{
         Authorization:"Bearer "+ token
     }
    } 
-)
+) 

@@ -10,7 +10,8 @@ import { Axios } from "../components/Axios";
 export default function Categories(){
     const cookie= Cookie();
        const[dok,setdok]=useState(1);
-       const [categories, setCategories] = useState();
+       const [categories, setCategories] = useState([{
+        created_at: "",id: 1,image: "",title: "",updated_at: ""}]);
        const [showLoader,setShowLoader] = useState(true)
        const [numberElement,setnumberElement] = useState(5)
        const [limet,setlimet] = useState({last:0,now:5});
@@ -18,10 +19,11 @@ export default function Categories(){
       const navigate = useNavigate();
      
     const hederTable = [
-        {
+      {
             key:"title",
             name:"title",
         },
+      
             {
             key:"image",
             name:"image"
@@ -39,6 +41,7 @@ export default function Categories(){
        Axios.get("/categories")
        .then((data)=>{
         setShowLoader(false)
+        console.log(data.data)
         setCategories(data.data)
     })
     .catch((err)=>{

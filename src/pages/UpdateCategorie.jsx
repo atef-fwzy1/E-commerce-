@@ -19,7 +19,7 @@ export default function UpdateCategorie(){
  
 
        useEffect(()=>{
-         axios.get("http://127.0.0.1:8000/api/category/"+CateId)
+         axios.get("https://e-commerce-backend-production-6372.up.railway.app/api/category/"+CateId)
          .then((data)=>{
            setTitle(data.data.title)
           }).catch((err)=>{

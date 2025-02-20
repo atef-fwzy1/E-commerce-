@@ -33,12 +33,14 @@ export default function TableComp({haeder,data=[],courentUser="" ,action,showLoa
           for(let i= limet.last;i < limet.now;i++){
         limetData.push(data[i]);
         }
-        const finelDat = searchData.length > 0 ?searchData:limetData
+        const finelDat = searchData.length !== 0 ?searchData:limetData
+        console.log(searchData.length)
+        // const finelDat = limetData
         
         let showtabelcontent = [];
            if(finelDat.length >  0){
 
-         showtabelcontent = finelDat.map((ele1,ind)=>{
+         showtabelcontent = data.map((ele1,ind)=>{
            return  <tr >
                  <td>{ind + limet.last + 1}</td>
                   {

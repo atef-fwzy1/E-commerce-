@@ -22,7 +22,7 @@ export default function UpdateUsers(){
   
     useEffect(()=>{
       setloader(true)
-          axios.get("http://127.0.0.1:8000/api/user/" +ID,{
+          axios.get("https://e-commerce-backend-production-6372.up.railway.app/api/user/" +ID,{
         headers:{
             Authorization:"Bearer " +token
         }

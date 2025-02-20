@@ -17,8 +17,7 @@ export default function Topbar(){
     const cookie = Cookie(); 
     useEffect(()=>{
      
-                        Axios.get("/user")
-                    .then((data)=>{setUserName(data.data)}).catch((err)=>console.log(err))
+                        Axios.get("/user").then((data)=>{setUserName(data.data)}).catch((err)=>console.log(err))
     },[])
 
     function HandelLogot(){
