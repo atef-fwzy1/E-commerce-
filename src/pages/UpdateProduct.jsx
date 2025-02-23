@@ -20,7 +20,8 @@ export default function UpdateProduct(){
         description:"",
         price:"",
         discount:"",
-        About:""
+        About:"",
+        stock:""
        })
        
      const [loader,setloader] = useState(false);
@@ -38,6 +39,7 @@ export default function UpdateProduct(){
         useEffect(()=>{
        Axios.get("/product/"+ID)
        .then((data)=>{
+        console.log(data)
        SetInputs(data.data[0])
        setImages(data.data[0].images)
        
@@ -58,6 +60,7 @@ export default function UpdateProduct(){
             formdata.append("price",Inputs.price)
             formdata.append("discount",Inputs.discount)
             formdata.append("About",Inputs.About)
+            formdata.append("stock",Inputs.stock)
             for(let i = 0 ; i < images.length ; i++){
               formdata.append("images[]",images[i])
             }
@@ -149,6 +152,13 @@ export default function UpdateProduct(){
       <Form.Group key={142045} className="mb-3" controlId="formBasicPassword">
         <Form.Label>discount</Form.Label>
         <Form.Control  value={Inputs.discount} onChange={(event)=>{HandelChange(event)}} name='discount' type="text" placeholder="Enter discount.." />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      </Form.Group>
+
+      <Form.Group key={142045} className="mb-3" controlId="formBasicPassword">
+        <Form.Label>discount</Form.Label>
+        <Form.Control  value={Inputs.stock} onChange={(event)=>{HandelChange(event)}} name='stock' type="text" placeholder="Enter stock.." />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
       </Form.Group>

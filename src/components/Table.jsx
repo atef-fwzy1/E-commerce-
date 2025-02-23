@@ -74,7 +74,7 @@ export default function TableComp({haeder,data=[],courentUser="" ,action,showLoa
              return  <td>{ele1[ele2.key].slice(0,15) }</td>   
             }
            if(ele2.key ==="image" ){
-             return <img style={{width:"55px",margin: "auto",display: "block"}} src={`https://e-commerce-backend-production-6372.up.railway.app/${ele1.image}`} alt='error'></img>
+             return <img style={{width:"55px",margin: "auto",display: "block"}} src={`https://e-commerce-backend-production-8649.up.railway.app/${ele1.image}`} alt='error'></img>
             }
             else
             return  <td>{ele1[ele2.key] }</td>       

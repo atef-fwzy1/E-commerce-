@@ -23,7 +23,7 @@ export default function AddProuducts(){
         price:"",
         discount:"",
         About:"",
-        stock:""
+        stock:"5"
        })
        
      const [loader,setloader] = useState(false);
@@ -44,29 +44,33 @@ export default function AddProuducts(){
             )
         })
         function HandelChange(ele){
-          console.log(Inputs)
             SetInputs({...Inputs,[ele.target.name]:ele.target.value});
             if(!sent){
-              setSent(true)
               HandelDoumyData();
+              setSent(true)
             }
-        }
+          }
+   
       const domyData =   {
         category:null,
         title:"Notfound",
         description:"Notfound",
         price:2222,
         discount:5545,
-        About:"Notfound"
+        About:"Notfound",
+        stock:"5"
        }
+ 
         function HandelDoumyData(){
            Axios.post("/product/add",domyData).then((data)=>{
               setProduct_id(data.data.id);
-                
+                console.log(data)
           }).catch((err)=>{
                 console.log(err)
             })
         }
+
+              
         function HandelEdit(event){
            event.preventDefault();
             const formdata = new FormData();
@@ -76,11 +80,12 @@ export default function AddProuducts(){
             formdata.append("price",Inputs.price)
             formdata.append("discount",Inputs.discount)
             formdata.append("About",Inputs.About)
+            formdata.append("stock",Inputs.stock)
             for(let i = 0 ; i < images.length ; i++){
               formdata.append("images[]",images[i])
             }
             Axios.post("/product/edit/" +product_id,formdata).then((res)=>{
-              
+              console.log(res)
                 navigate("/dashboard/products")
           }).catch((err)=>{
                 console.log(err)
@@ -88,23 +93,21 @@ export default function AddProuducts(){
         }
         
    let d= useRef(-1)
-     async function HandelImagesChaing(e){ 
-         setImages([...images,...e.target.files])
-         const imaresFiles = e.target.files;
-               const from =new FormData();
 
-             for(let  i =   0 ; i < imaresFiles.length ; i++ ){
+  //   start HandelImagesChaing
+  async function HandelImagesChaing(e){ 
+    setImages([...images,...e.target.files])
+    const imaresFiles = e.target.files;
+    const from =new FormData();
+    
+    for(let  i =   0 ; i < imaresFiles.length ; i++ ){
                    d.current++;
                  from.append("image",imaresFiles[i])
                 from.append("product_id",product_id)
          const res =  await Axios.post("product-img/add",from,
                 {onUploadProgress:(even)=>{
-                 
-                    
                     progressRef.current[d.current].attributes[0].value = Math.round((even.loaded / even.total) * 100)
                     progressRef.current[d.current].style.width =`${Math.round((even.loaded / even.total) * 100)}%`
-                
-                  
                 }}
               )
               .then((data)=>{
@@ -115,6 +118,7 @@ export default function AddProuducts(){
             }
         }
 
+        //   end HandelImagesChaing
         
            
     function deleteImage(id){
@@ -184,16 +188,18 @@ export default function AddProuducts(){
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
       </Form.Group>
 
-       <Form.Group key={14550} className="mb-3" controlId="formBasicPassword">
-        <Form.Label>price</Form.Label>
-        <Form.Control disabled={!sent} value={Inputs.stock} onChange={(event)=>{HandelChange(event)}} name='stock' type="text" placeholder="Enter stock" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-      </Form.Group>
+       
 
       <Form.Group key={142045} className="mb-3" controlId="formBasicPassword">
         <Form.Label>discount</Form.Label>
         <Form.Control disabled={!sent} value={Inputs.discount} onChange={(event)=>{HandelChange(event)}} name='discount' type="text" placeholder="Enter discount.." />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      </Form.Group>
+
+      <Form.Group key={14550} className="mb-3" controlId="formBasicPassword">
+        <Form.Label>price</Form.Label>
+        <Form.Control disabled={!sent} value={Inputs.stock} onChange={(event)=>{HandelChange(event)}} name='stock' type="text" placeholder="Enter stock" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
       </Form.Group>

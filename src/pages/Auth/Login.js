@@ -37,7 +37,7 @@ async function HandelSubmit(e){
   try{
     if(form.password.length >= 3 && form.email.length >= 5 ){
     setloader(true)
-   await axios.post("https://e-commerce-backend-production-6372.up.railway.app/api/login",
+   await axios.post("https://e-commerce-backend-production-8649.up.railway.app/api/login",
     {
       email:form.email,
       password:form.password,
@@ -87,7 +87,7 @@ async function HandelSubmit(e){
                  <a href='https://www.facebook.com/'> <img  src={require("./img/facebook.png")}alt='facebook'/></a>
                </div>
                <div className='google'>
-                   <a href={'https://e-commerce-backend-production-6372.up.railway.app/login-google'}>
+                   <a href={'https://e-commerce-backend-production-8649.up.railway.app/login-google'}>
                             <img src={require("./img/google.png")} alt='google'/>
                    </a>
                </div>
