@@ -21,14 +21,14 @@ export default function DetilsCategories(){
 
       const showlatest= products.map((ele,ind)=>{
           if(ele.category  == Id )
-            return <NewCard  element={ele}  img={ele.images[0]}title={ele.title}des={ele.description}price={ele.price}disc={ele.discount}rating={ele.rating}  id={ele.id} />
+            return <NewCard  element={ele}  img={"https://e-commerce-backend-production-8649.up.railway.app"+ele.images[0]}title={ele.title}des={ele.description}price={ele.price}disc={ele.discount}rating={ele.rating}  id={ele.id} />
         })
     return(
        <>
-       <div className="detilsetexe">
-            <h3 className="count">We found   {` #${showlatest.length}`} Products </h3>
+       <div Class="detilsetexe">
+            <h3 Class="count">We found   {` #${showlatest.length}`} Products </h3>
        </div>
-       <div className="ratedCont" style={{width:"90%",margin:"auto"}}>
+       <div Class="ratedCont" style={{width:"90%",margin:"auto"}}>
 
         {showlatest}
        </div>  

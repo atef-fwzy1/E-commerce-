@@ -141,9 +141,9 @@ export default function AddProuducts(){
          <span className='size'>{images[ind].size / 102 < 900 ?(images[ind].size / 1024).toFixed(1)+" KB":(images[ind].size /( 1024  * 1024)).toFixed(1) + " MB"}</span>
     </div>
         <div className='progress'>
-           <sapn  ref={(ele)=>{progressRef.current[ind] = ele}}  valueProgres={20} className="area"></sapn>
+           <sapn  ref={(ele)=>{progressRef.current[ind] = ele}}  valueProgres={20} Class="area"></sapn>
         </div>
-         <i className="deleteImage fa-solid fa-trash" onClick={()=>{deleteImage(ind)}}></i>
+         <i Class="deleteImage fa-solid fa-trash" onClick={()=>{deleteImage(ind)}}></i>
         </div>)
 })
  
@@ -155,10 +155,10 @@ export default function AddProuducts(){
                
             } 
         return(
-            <div className="Updateuers addproduct">
+            <div Class="Updateuers addproduct">
           <h3 className='userstype'>Add Products</h3>
            <Form>
-                  <Form.Group  key={120}className="mb-4" controlId="role">
+                  <Form.Group  key={120}Class="mb-4" controlId="role">
         <Form.Label>category type</Form.Label>
         <Form.Select   value={Inputs.category} name="category" onChange={(event)=>{HandelChange(event)}} type="text" placeholder="category type" >
             <option selected >Select Categorie</option>
@@ -167,51 +167,51 @@ export default function AddProuducts(){
           
       </Form.Group>
 
-       <Form.Group key={10} className="mb-3" controlId="formBasicPassword">
+       <Form.Group key={10} Class="mb-3" controlId="formBasicPassword">
         <Form.Label>name</Form.Label>
         <Form.Control disabled={!sent} value={Inputs.title} onChange={(event)=>{HandelChange(event)}} name='title' type="text" placeholder="Enter Title.." />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Form.Group Class="mb-3" controlId="formBasicCheckbox">
       </Form.Group>
        
-      <Form.Group key={10656545} className="mb-3" controlId="formBasicPassword">
+      <Form.Group key={10656545} Class="mb-3" controlId="formBasicPassword">
         <Form.Label>description</Form.Label>
         <Form.Control disabled={!sent} value={Inputs.description} onChange={(event)=>{HandelChange(event)}} name='description' type="text" placeholder="Enter desc.." />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Form.Group Class="mb-3" controlId="formBasicCheckbox">
       </Form.Group>
 
-         <Form.Group key={14550} className="mb-3" controlId="formBasicPassword">
+         <Form.Group key={14550} Class="mb-3" controlId="formBasicPassword">
         <Form.Label>price</Form.Label>
         <Form.Control disabled={!sent} value={Inputs.price} onChange={(event)=>{HandelChange(event)}} name='price' type="text" placeholder="Enter price.." />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Form.Group Class="mb-3" controlId="formBasicCheckbox">
       </Form.Group>
 
        
 
-      <Form.Group key={142045} className="mb-3" controlId="formBasicPassword">
+      <Form.Group key={142045} Class="mb-3" controlId="formBasicPassword">
         <Form.Label>discount</Form.Label>
         <Form.Control disabled={!sent} value={Inputs.discount} onChange={(event)=>{HandelChange(event)}} name='discount' type="text" placeholder="Enter discount.." />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Form.Group Class="mb-3" controlId="formBasicCheckbox">
       </Form.Group>
 
-      <Form.Group key={14550} className="mb-3" controlId="formBasicPassword">
+      <Form.Group key={14550} Class="mb-3" controlId="formBasicPassword">
         <Form.Label>price</Form.Label>
         <Form.Control disabled={!sent} value={Inputs.stock} onChange={(event)=>{HandelChange(event)}} name='stock' type="text" placeholder="Enter stock" />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Form.Group Class="mb-3" controlId="formBasicCheckbox">
       </Form.Group>
       
-        <Form.Group key={1045} className="mb-3" controlId="formBasicPassword">
+        <Form.Group key={1045} Class="mb-3" controlId="formBasicPassword">
         <Form.Label>About</Form.Label>
         <Form.Control disabled={!sent} value={Inputs.About} onChange={(event)=>{HandelChange(event)}} name='About' type="text" placeholder="Enter About.." />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Form.Group Class="mb-3" controlId="formBasicCheckbox">
       </Form.Group>
 
-    <Form.Group controlId="formFile" className="mb-3">
+    <Form.Group controlId="formFile" Class="mb-3">
         <Form.Label>Chose Image</Form.Label>
         <Form.Control  ref={focus}  hidden multiple required onChange={(ele)=>{
             
@@ -220,7 +220,7 @@ export default function AddProuducts(){
       </Form.Group>
       <div style={{border:!sent&&"dotted 2px gray"}} className='focus_input' onClick={Focus_input}>
           <div>
-             <i  style={{color:!sent&&"gray"}} class="fa-solid fa-upload"></i>
+             <i  style={{color:!sent&&"gray"}} Class="fa-solid fa-upload"></i>
            <span style={{color:!sent&&"gray"}}>Uplaod iamges</span>
           </div>
 

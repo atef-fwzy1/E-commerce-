@@ -14,15 +14,15 @@ export default function OneProduct(){
   }).catch((err)=>console.log(err))
    
   },[])
-  console.log(latest)
+
     return(
-        <div className="Oneproduct">
-              <div className="left">
+        <div Class="Oneproduct">
+              <div Class="left">
                    <h2>{latest.title}</h2>
                    <span>{latest.description}</span>
                      <NavLink to={`product/${latest.id}`}> <Button className='Shop_Now'  variant="secondary">Shop Now</Button></NavLink>
               </div>
-              <img src={`${images}`} alt="errr"/>
+              <img src={`https://e-commerce-backend-production-8649.up.railway.app${images}`} alt="errr"/>
         </div>
     )
 }

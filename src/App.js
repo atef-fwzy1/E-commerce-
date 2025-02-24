@@ -34,7 +34,7 @@ function App() {
   console.log(window.location.pathname)
      const menu = useContext(Menu);
   return (
-    <div className="App">
+    <div Class="App">
         {
 
      menu.isOpen&&<CategoriesList/>

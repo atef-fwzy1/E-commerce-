@@ -73,16 +73,16 @@ export default function Categories(){
 
         }
     return(
-        <div className="Categorise " >
+        <div Class="Categorise " >
 
-        <div className="action">
+        <div Class="action">
            <h3 className='userstype'>All Categories</h3>
          <Button className='primary'  variant="primary" type="submit" >
         <Link style={{color:"white"}}to={"addCategorie"}>Add Categorie</Link>
       </Button>
         </div>
          <TableComp limet = {limet} haeder={hederTable} data={categories} action={HandelDelete} deletes={"categorie"} showLoader={showLoader}type={"categorie"}/>
-         <div className="contpaginetion">
+         <div Class="contpaginetion">
     <Form.Select style={{width:"20vh"}} aria-label="Default select example" onChange={(ele)=>{
          if(ele.target.value<= categories.length){
          setnumberElement(Number(ele.target.value)) 

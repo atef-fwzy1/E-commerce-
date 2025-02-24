@@ -35,31 +35,31 @@ const images = [];
         
         
         
-        <div className="ProgectDetails" style={{display:showDeposi?"block":"flex"}}>
+        <div Class="ProgectDetails" style={{display:showDeposi?"block":"flex"}}>
  
   {
     showDeposi?<PaymentForm/>:
     detials.description.length < 1 || detials.title.length < 1?<Laoder/>:<>
-      <div className="left">
+      <div Class="left">
            <ImageGallery items={images} />
    </div>
-              <div className="right">
-                            <div class="container">
+              <div Class="right">
+                            <div Class="container">
         <h1>{detials.title}</h1>
-        <div className="rate">
-<i class="golden fas fa-star"></i>
-<i class="golden fas fa-star"></i>
-<i class="golden fas fa-star"></i>
-<i class="golden fas fa-star"></i>
-<i class="golden fas fa-star"></i>
+        <div Class="rate">
+<i Class="golden fas fa-star"></i>
+<i Class="golden fas fa-star"></i>
+<i Class="golden fas fa-star"></i>
+<i Class="golden fas fa-star"></i>
+<i Class="golden fas fa-star"></i>
         </div>
-        <p className="description">{detials.description}</p>
+        <p Class="description">{detials.description}</p>
      
-        <div className="price">{"$"+detials.price}<s style={{fontSize:"14px"}}>{"$"+(Number(+detials.price) + Number(detials.discount))}</s></div>
+        <div Class="price">{"$"+detials.price}<s style={{fontSize:"14px"}}>{"$"+(Number(+detials.price) + Number(detials.discount))}</s></div>
  
-        <div class="cta-buttons">
+        <div Class="cta-buttons">
             <div onClick={()=>setShowDeposit(true)}><Button value={"by Now"}/>  </div>
-             <i class="fa fa-shopping-cart" onClick={()=>{
+             <i Class="fa fa-shopping-cart" onClick={()=>{
                  AddToCard(detials)
            
                 }}></i>
@@ -68,7 +68,7 @@ const images = [];
         </div>
         
     </div>
-        <p class="return-info"> Free returns within 30 days </p>
+        <p Class="return-info"> Free returns within 30 days </p>
             </div>
     </>
   }

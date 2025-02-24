@@ -5,10 +5,10 @@ import { useEffect, useState } from "react"
 export default function Counter({ele}){
   
     return(
-           <div className="boxCounter">
-                     <span className="one" onClick={AddToCard(ele)}>+</span>
-                         <span className="two" >5</span>
-                     <span className="three" 
+           <div Class="boxCounter">
+                     <span Class="one" onClick={AddToCard(ele)}>+</span>
+                         <span Class="two" >5</span>
+                     <span Class="three" 
                       onClick={DeleteFromCard(ele)}>-</span>
                         </div>
     )

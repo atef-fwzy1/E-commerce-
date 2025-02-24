@@ -74,16 +74,16 @@ export default function Products(){
             })
         }
     return(
-        <div className="Categorise " >
+        <div Class="Categorise " >
 
-        <div className="action">
+        <div Class="action">
            <h3 className='userstype'>All Products</h3>
          <Button className='primary'  variant="primary" type="submit" >
         <Link style={{color:"white"}}to={"addproduct"}>Add Product</Link>
       </Button>
         </div>
          <TableComp limet = {limet} haeder={hederTable} data={products} action={HandelDelete} deletes={"products"} showLoader={showLoader}type={"products"}/>
-           <div className="contpaginetion">
+           <div Class="contpaginetion">
     <Form.Select style={{width:"20vh"}} aria-label="Default select example" onChange={(ele)=>{
              if(ele.target.value<= products.length){
          setnumberElement(Number(ele.target.value)) 

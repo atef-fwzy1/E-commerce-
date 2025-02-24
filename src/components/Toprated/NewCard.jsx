@@ -11,7 +11,7 @@ price: "190",rating: "5",ratings_number: "0",
 title: "Danke sagen!",
 updated_at: "2025-0000Z"}}){
     const Cardnum = useContext(CardValue)
-
+    
     return(
         <>
                   

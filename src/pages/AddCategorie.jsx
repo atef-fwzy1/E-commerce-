@@ -31,18 +31,18 @@ export default function AddCategorie(){
     }
 
     return(
-        <div className="Updateuers">
+        <div Class="Updateuers">
           <h3 className='userstype'>Add Categorie</h3>
            <Form>
 
-       <Form.Group key={10} className="mb-3" controlId="formBasicPassword">
+       <Form.Group key={10} Class="mb-3" controlId="formBasicPassword">
         <Form.Label>name</Form.Label>
         <Form.Control value={title} onChange={(event)=>{setTitle(event.target.value)}} type="text" placeholder="Enter Title.." />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Form.Group Class="mb-3" controlId="formBasicCheckbox">
       </Form.Group>
 
-      <Form.Group controlId="formFile" className="mb-3">
+      <Form.Group controlId="formFile" Class="mb-3">
         <Form.Label>Chose Image</Form.Label>
         <Form.Control required onChange={(ele)=>{
         setimage(ele.target.files.item(0))

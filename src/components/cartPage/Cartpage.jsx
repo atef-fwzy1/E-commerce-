@@ -37,40 +37,40 @@ cart?.map((ele,ind)=>{
        if(cart.length === ind + 1){
          totalPrice.current.textContent = "$"+count
         }
-        ShowCards.push(<div class="cart">
-    <ul class="cartWrap">
-      <li class="items odd">
+        ShowCards.push(<div Class="cart">
+    <ul Class="cartWrap">
+      <li Class="items odd">
         
-    <div class="infoWrap"> 
-        <div class="cartSection">
-        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
-          <p class="itemNumber">#-{ele.id}</p>
+    <div Class="infoWrap"> 
+        <div Class="cartSection">
+        <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" Class="itemImg" />
+          <p Class="itemNumber">#-{ele.id}</p>
           <h3>{ele.title}</h3>
         
-           <p> <input type="text"  class="qty" /> <img style={{height:"70px"}} src={`${ele.images[0].image}`} alt="err" /></p>
+           <p> <input type="text"  Class="qty" /> <img style={{height:"70px"}} src={`https://e-commerce-backend-production-8649.up.railway.app${ele.images[0].image}`} alt="err" /></p>
         
-          <p class="stockStatus"> In Stock</p>
+          <p Class="stockStatus"> In Stock</p>
         </div>  
-        <div class="prodTotal cartSection">
+        <div Class="prodTotal cartSection">
                 <div style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"15px"}}>
                    <p>{"$"+ele.price}</p>
-                  <i class="fa-solid fa-trash" onClick={()=>{DeleteFromCard(ele.id) 
+                  <i Class="fa-solid fa-trash" onClick={()=>{DeleteFromCard(ele.id) 
                            card.setCard((prive)=>prive   + 1 )
                            Cardnum.setNumber((prive)=>prive - 1 )
                       
                   }}></i>
                 </div>
-                <div className="counter">
-                        <div className="boxCounter">
-                     <span className="one" onClick={()=>{counterEle.current[ind].textContent++
+                <div Class="counter">
+                        <div Class="boxCounter">
+                     <span Class="one" onClick={()=>{counterEle.current[ind].textContent++
                         const num = totalPrice.current.textContent.slice(1)
                            console.log("$"+(+num + +ele.price))
                           totalPrice.current.textContent = "$"+(+num + +ele.price)
 
                      }}>+</span>
-                         <span className="two"  ref={(ele)=>{
+                         <span Class="two"  ref={(ele)=>{
                           counterEle.current[ind] = ele}}> {ele.count}</span>
-                     <span className="three" onClick={()=> {
+                     <span Class="three" onClick={()=> {
                       if(counterEle.current[ind].textContent > 1){
                         counterEle.current[ind].textContent--
                         let num = totalPrice.current.textContent.slice(1)
@@ -89,22 +89,22 @@ cart?.map((ele,ind)=>{
 
 }
   return(
-    <div className="CartBox">
- <div class="wrap cf">
-  <div class="heading cf">
+    <div Class="CartBox">
+ <div Class="wrap cf">
+  <div Class="heading cf">
     <h1>My Cart</h1>
-        <NavLink to={"/"} href="/" className="continue">Continue Shopping</NavLink>
+        <NavLink to={"/"} href="/" Class="continue">Continue Shopping</NavLink>
   </div>
   
     {ShowCards}
-  <div class="promoCode"><label for="promo">Have A Promo Code?</label><input type="text" name="promo" placholder="Enter Code" />
-  <a href="#" class="btn">Submite</a></div>
+  <div Class="promoCode"><label for="promo">Have A Promo Code?</label><input type="text" name="promo" placholder="Enter Code" />
+  <a href="#" Class="btn">Submite</a></div>
   
-  <div class="subtotal cf">
+  <div Class="subtotal cf">
     <ul>
 
-            <li class="totalRow final"><span class="label">Total</span><span ref={totalPrice} className="value">0</span></li>
-      <li class="totalRow"><a href="#" class="btn continue">Checkout</a></li>
+            <li Class="totalRow final"><span Class="label">Total</span><span ref={totalPrice} Class="value">0</span></li>
+      <li Class="totalRow"><a href="#" Class="btn continue">Checkout</a></li>
     </ul>
   </div>
 </div>

@@ -26,10 +26,10 @@ export default function CategoriesList(){
     })
 
     return(
-        <div className="CategoOuline">
+        <div Class="CategoOuline">
             
-        <div className="CategoList">
-            <i class="closeList fa-solid fa-xmark" onClick={()=>menu.setIsopen(false)}></i>
+        <div Class="CategoList">
+            <i Class="closeList fa-solid fa-xmark" onClick={()=>menu.setIsopen(false)}></i>
             {sliceList.length == 0 ? <>
       <Placeholder as="p" animation="glow"  style={{width:"100%"}}>
         <Placeholder xs={12} />

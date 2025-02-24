@@ -11,9 +11,9 @@ export default function AllSkiles(){
    
 
     return(
-    <div className="BoxAnim">
-      <h2 className="pertners">Our Partners</h2>
-      <div className="d-flex"   style={{
+    <div Class="BoxAnim">
+      <h2 Class="pertners">Our Partners</h2>
+      <div Class="d-flex"   style={{
         width: "1300px",
     animationPlayState: "running"
         }}>

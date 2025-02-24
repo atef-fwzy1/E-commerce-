@@ -33,34 +33,34 @@ export default function HomePage(){
     })
      const showlatest= latest.map((ele,ind)=>{
         return(
-            <NewCard  element={ele}  img={ele.images[0]}title={ele.title}des={ele.description}price={ele.price}disc={ele.discount}rating={ele.rating}  id={ele.id} />
+            <Toprated img={ele.images[0]}  element={ele}  title={ele.title}des={ele.description}price={ele.price}disc={ele.discount}rating={ele.rating}  id={ele.id} />
 
         )
     })
 
     return(
       
-        <div className="home">   
+        <div Class="home">   
               
-               <div className="containter">
+               <div Class="containter">
                      <Hero/>
                      <ProductsDiv/>
                      <OneProduct/>
 
-                             <div className="toprated">
+                             <div Class="toprated">
 
                             <h2>Top Rated</h2>
-                        <div className="ratedCont">
+                        <div Class="ratedCont">
                         {
                         loded?        <>
-                <div className="card"  style={{height:"20vh"}}>
+                <div Class="card"  style={{height:"20vh"}}>
   <Placeholder as="p" animation="glow">
         <Placeholder xs={12} />
       </Placeholder>
       <Placeholder as="p" animation="wave">
         <Placeholder xs={12} />
       </Placeholder>
-                </div><div className="card"  style={{height:"20vh"}}>
+                </div><div Class="card"  style={{height:"20vh"}}>
    <Placeholder as="p" animation="glow">
         <Placeholder xs={12} />
       </Placeholder>
@@ -68,7 +68,7 @@ export default function HomePage(){
         <Placeholder xs={12} />
       </Placeholder>
                 </div>
-                < div className="card" style={{height:"20vh"}}>
+                < div Class="card" style={{height:"20vh"}}>
    <Placeholder as="p" animation="glow" >
         <Placeholder xs={12} />
         <Placeholder xs={12} />
@@ -84,20 +84,20 @@ export default function HomePage(){
                         </div>
                         </div>
                              <OneProduct/>
-                          <div className="toprated">
+                          <div Class="toprated">
 
                             <h2>Latest Products</h2>
-                        <div className="ratedCont">
+                        <div Class="ratedCont">
                         {
                          loded?        <>
-                <div className="card"  style={{height:"20vh"}}>
+                <div Class="card"  style={{height:"20vh"}}>
   <Placeholder as="p" animation="glow">
         <Placeholder xs={12} />
       </Placeholder>
       <Placeholder as="p" animation="wave">
         <Placeholder xs={12} />
       </Placeholder>
-                </div><div className="card"  style={{height:"20vh"}}>
+                </div><div Class="card"  style={{height:"20vh"}}>
    <Placeholder as="p" animation="glow">
         <Placeholder xs={12} />
       </Placeholder>
@@ -107,7 +107,7 @@ export default function HomePage(){
                 </div>
               
                 
-                < div className="card" style={{height:"20vh"}}>
+                < div Class="card" style={{height:"20vh"}}>
    <Placeholder as="p" animation="glow" >
         <Placeholder xs={12} />
         <Placeholder xs={12} />

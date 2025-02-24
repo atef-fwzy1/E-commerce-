@@ -104,7 +104,7 @@ export default function UpdateProduct(){
 
    
         
-         <i className="size fa-solid fa-trash" onClick={()=>{deleteImage(ele.id)}}></i>
+         <i Class="size fa-solid fa-trash" onClick={()=>{deleteImage(ele.id)}}></i>
         </div>)
 })
  
@@ -116,10 +116,10 @@ export default function UpdateProduct(){
                
             } 
         return(
-            <div className="Updateuers addproduct Updateproduct">
+            <div Class="Updateuers addproduct Updateproduct">
           <h3 className='userstype'>UpdateProducts</h3>
            <Form>
-                  <Form.Group  key={120}className="mb-4" controlId="role">
+                  <Form.Group  key={120}Class="mb-4" controlId="role">
         <Form.Label>category type</Form.Label>
         <Form.Select   value={Inputs.category} name="category" onChange={(event)=>{HandelChange(event)}} type="text" placeholder="category type" >
             <option selected >Select Categorie</option>
@@ -128,49 +128,49 @@ export default function UpdateProduct(){
           
       </Form.Group>
 
-       <Form.Group key={10} className="mb-3" controlId="formBasicPassword">
+       <Form.Group key={10} Class="mb-3" controlId="formBasicPassword">
         <Form.Label>name</Form.Label>
         <Form.Control value={Inputs.title} onChange={(event)=>{HandelChange(event)}} name='title' type="text" placeholder="Enter Title.." />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Form.Group Class="mb-3" controlId="formBasicCheckbox">
       </Form.Group>
        
-      <Form.Group key={10656545} className="mb-3" controlId="formBasicPassword">
+      <Form.Group key={10656545} Class="mb-3" controlId="formBasicPassword">
         <Form.Label>description</Form.Label>
         <Form.Control value={Inputs.description} onChange={(event)=>{HandelChange(event)}} name='description' type="text" placeholder="Enter desc.." />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Form.Group Class="mb-3" controlId="formBasicCheckbox">
       </Form.Group>
 
-         <Form.Group key={14550} className="mb-3" controlId="formBasicPassword">
+         <Form.Group key={14550} Class="mb-3" controlId="formBasicPassword">
         <Form.Label>price</Form.Label>
         <Form.Control value={Inputs.price} onChange={(event)=>{HandelChange(event)}} name='price' type="text" placeholder="Enter price.." />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Form.Group Class="mb-3" controlId="formBasicCheckbox">
       </Form.Group>
 
-      <Form.Group key={142045} className="mb-3" controlId="formBasicPassword">
+      <Form.Group key={142045} Class="mb-3" controlId="formBasicPassword">
         <Form.Label>discount</Form.Label>
         <Form.Control  value={Inputs.discount} onChange={(event)=>{HandelChange(event)}} name='discount' type="text" placeholder="Enter discount.." />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Form.Group Class="mb-3" controlId="formBasicCheckbox">
       </Form.Group>
 
-      <Form.Group key={142045} className="mb-3" controlId="formBasicPassword">
+      <Form.Group key={142045} Class="mb-3" controlId="formBasicPassword">
         <Form.Label>discount</Form.Label>
         <Form.Control  value={Inputs.stock} onChange={(event)=>{HandelChange(event)}} name='stock' type="text" placeholder="Enter stock.." />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Form.Group Class="mb-3" controlId="formBasicCheckbox">
       </Form.Group>
       
-        <Form.Group key={1045} className="mb-3" controlId="formBasicPassword">
+        <Form.Group key={1045} Class="mb-3" controlId="formBasicPassword">
         <Form.Label>About</Form.Label>
         <Form.Control value={Inputs.About} onChange={(event)=>{HandelChange(event)}} name='About' type="text" placeholder="Enter About.." />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Form.Group Class="mb-3" controlId="formBasicCheckbox">
       </Form.Group>
 
-    <Form.Group controlId="formFile" className="mb-3">
+    <Form.Group controlId="formFile" Class="mb-3">
         <Form.Label>Chose Image</Form.Label>
         <Form.Control  ref={focus}  hidden multiple required onChange={(ele)=>{
             
@@ -179,7 +179,7 @@ export default function UpdateProduct(){
       </Form.Group>
       <div  className='focus_input' onClick={Focus_input}>
           <div>
-             <i   class="fa-solid fa-upload"></i>
+             <i   Class="fa-solid fa-upload"></i>
            <span >Uplaod iamges</span>
           </div>
 

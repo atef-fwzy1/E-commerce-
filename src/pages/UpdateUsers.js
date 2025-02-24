@@ -56,23 +56,23 @@ export default function UpdateUsers(){
     }
    
     return(
-        <div className="Updateuers">
+        <div Class="Updateuers">
           <h3 className='userstype'>update User</h3>
            <Form>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Group Class="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control value={user.email} onChange={(event)=>{HnadelInput(event)}} name='email' type="email" placeholder="Enter email.." />
-        <Form.Text className="text-muted">
+        <Form.Text Class="text-muted">
           We'll never share your email with anyone else.
         </Form.Text>
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
+      <Form.Group Class="mb-3" controlId="formBasicPassword">
         <Form.Label>Name</Form.Label>
         <Form.Control value={user.name} onChange={(event)=>{HnadelInput(event)}} name='name' type="name" placeholder="Enter name.." />
       </Form.Group>
 
-      <Form.Group className="mb-4" controlId="role">
+      <Form.Group Class="mb-4" controlId="role">
         <Form.Label>Role</Form.Label>
         <Form.Select value={role} onChange={(event)=>{setRole(event.target.value)}} name='name' type="name" placeholder="Enter Role.." >
           <option selected>select Role</option>
@@ -82,7 +82,7 @@ export default function UpdateUsers(){
           </Form.Select>
           
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Form.Group Class="mb-3" controlId="formBasicCheckbox">
       </Form.Group>
       {
         user === "" ?<Button className='primary loderdiv' variant="primary" type="none" onClick={(event)=>event.preventDefault()}><LaoderTow/></Button>: <Button className='primary' variant="primary" type="submit" onClick={(event)=> Handelsupmet(event)}>

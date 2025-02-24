@@ -74,7 +74,7 @@ export default function TableComp({haeder,data=[],courentUser="" ,action,showLoa
              return  <td>{ele1[ele2.key].slice(0,15) }</td>   
             }
            if(ele2.key ==="image" ){
-             return <img style={{width:"55px",margin: "auto",display: "block"}} src={`https://e-commerce-backend-production-8649.up.railway.app/${ele1.image}`} alt='error'></img>
+             return <img style={{width:"55px",margin: "auto",display: "block"}} src={`https://e-commerce-backend-production-8649.up.railway.app${ele1.image}`} alt='error'></img>
             }
             else
             return  <td>{ele1[ele2.key] }</td>       
@@ -84,16 +84,16 @@ export default function TableComp({haeder,data=[],courentUser="" ,action,showLoa
          {
            ele1.role ==="1995" || ele1.role === courentUser 
            ?
-           <td className="actions"><Link to={`${ele1.id}`}><i style={{cursor:"pointer"}} class="fa-solid fa-pen-to-square"></i></Link></td>
+           <td Class="actions"><Link to={`${ele1.id}`}><i style={{cursor:"pointer"}} Class="fa-solid fa-pen-to-square"></i></Link></td>
            :
-         <td  className="actions"> <Link to={`${ele1.id}`}><i style={{marginLeft:"10px",cursor:"pointer"}}  class="fa-solid fa-pen-to-square"></i></Link><i class="fa-solid fa-trash" onClick={()=>{action(ele1.id)}} style={{marginLeft:"20px" ,color:"red" ,cursor:"pointer"}}></i></td>
+         <td  Class="actions"> <Link to={`${ele1.id}`}><i style={{marginLeft:"10px",cursor:"pointer"}}  Class="fa-solid fa-pen-to-square"></i></Link><i Class="fa-solid fa-trash" onClick={()=>{action(ele1.id)}} style={{marginLeft:"20px" ,color:"red" ,cursor:"pointer"}}></i></td>
          }
         </tr>
         })
       }
     return(
       <>
-      <Form.Group style={{width:"20vh"}} className="mb-3" controlId="formBasicPassword">
+      <Form.Group style={{width:"20vh"}} Class="mb-3" controlId="formBasicPassword">
         <Form.Label>name</Form.Label>
         <Form.Control   key={10} value={search} onChange={(event)=>{setSearch(event.target.value)}} name='name' type="search" placeholder="search.." />
       </Form.Group>

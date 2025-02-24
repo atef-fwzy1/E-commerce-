@@ -68,9 +68,9 @@ async function HandelSubmit(e){
 }
 
     return(
-        <div className="containerr">
+        <div Class="containerr">
           
-          <div className="login_Register">
+          <div Class="login_Register">
             <h2 className='type typeLogin '>Login Now </h2>
            <form>
              <input className='email' type="email" name="email" placeholder="Enter your email" value={form.email} onChange={(event)=>HandelInputs(event)} required></input>
@@ -80,7 +80,7 @@ async function HandelSubmit(e){
             <button className='register' onClick={HandelSubmit}>Log in </button>
            </form>
            
-           <sapn className="orlogin">or login with</sapn>
+           <sapn Class="orlogin">or login with</sapn>
            <div className='optionLogin'>
               <div className='cont_logo'>
                  <div className='facebook'>
@@ -92,7 +92,7 @@ async function HandelSubmit(e){
                    </a>
                </div>
               </div>
-            <Link to={"/register"} className='tologin'> <span className='have'>register<i class="fa-solid fa-arrow-right fa-bounce"></i></span></Link>
+            <Link to={"/register"} className='tologin'> <span className='have'>register<i Class="fa-solid fa-arrow-right fa-bounce"></i></span></Link>
            </div>
            {error.length >= 1 && <Alert type={error} ioOpen={alert} />}
           </div>

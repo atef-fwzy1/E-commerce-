@@ -7,7 +7,7 @@ export default function Alert(props){
     },[props.ioOpen])
     return(
         <div className={`alert ${alert}`} style={{right:props.right}}>
-            <h2 className="err"> <div><i class="fa-regular fa-hand"></i>{props.type}</div><i class="fa-solid fa-xmark" onClick={()=>{
+            <h2 Class="err"> <div><i Class="fa-regular fa-hand"></i>{props.type}</div><i Class="fa-solid fa-xmark" onClick={()=>{
                     setalert("aletOff")
             }}></i> </h2>
         </div>

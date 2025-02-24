@@ -7,9 +7,9 @@ export default function Dashboard(){
 
 
     return(
-    <div className="dashboard" >
+    <div Class="dashboard" >
   
-      <div className="cont_sides">
+      <div Class="cont_sides">
       <Sidebare/>
       <Outlet/>
       </div>

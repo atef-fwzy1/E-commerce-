@@ -2,9 +2,9 @@
 
 export default function Card({url}) {
   return (
-    <div  className="bubble">
+    <div  Class="bubble">
         {
-        <img src={`${url}`} alt="err"/>
+        <img src={`https://e-commerce-backend-production-8649.up.railway.app${url}`} alt="err"/>
         }
             
     </div>

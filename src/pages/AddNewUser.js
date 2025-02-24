@@ -37,26 +37,26 @@ export default function AddNewUser(){
      setuers({...user,[input.target.name]:input.target.value})
     }
     return(
-        <div className="Updateuers">
+        <div Class="Updateuers">
           <h3 className='userstype'>Add New User</h3>
            <Form>
 
-       <Form.Group className="mb-3" controlId="formBasicPassword">
+       <Form.Group Class="mb-3" controlId="formBasicPassword">
         <Form.Label>name</Form.Label>
         <Form.Control   key={10} value={user.name} onChange={(event)=>{HnadelInput(event)}} name='name' type="name" placeholder="Enter name.." />
       </Form.Group>
 
-      <Form.Group   className="mb-3" controlId="formBasicEmail">
+      <Form.Group   Class="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control key={102} value={user.email} onChange={(event)=>{HnadelInput(event)}} name='email' type="email" placeholder="Enter email.." />
       </Form.Group>
 
-      <Form.Group key={105} className="mb-3" controlId="formBasicPassword">
+      <Form.Group key={105} Class="mb-3" controlId="formBasicPassword">
         <Form.Label>name</Form.Label>
         <Form.Control key={105} value={user.password} onChange={(event)=>{HnadelInput(event)}} name='password' type="password" placeholder="Enter pass.." />
       </Form.Group>
 
-      <Form.Group  key={120}className="mb-4" controlId="role">
+      <Form.Group  key={120}Class="mb-4" controlId="role">
         <Form.Label>Role</Form.Label>
         <Form.Select value={role} onChange={(event)=>{setRole(event.target.value)}} name='name' type="name" placeholder="Enter Role.." >
           <option disabled>select Role</option>
@@ -68,7 +68,7 @@ export default function AddNewUser(){
           
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Form.Group Class="mb-3" controlId="formBasicCheckbox">
 
       </Form.Group>
       

@@ -24,20 +24,20 @@ export default function ProductsDiv(){
             }
         
     return(
-        <div className="Prod_cont">
-                <h2 className="latest">latest sale products</h2>
+        <div Class="Prod_cont">
+                <h2 Class="latest">latest sale products</h2>
             <section id="products">
                  {showProdcuts.length >0 ?showProdcuts:
                 
         <>
-                <div className="card"  style={{height:"20vh"}}>
+                <div Class="card"  style={{height:"20vh"}}>
   <Placeholder as="p" animation="glow">
         <Placeholder xs={12} />
       </Placeholder>
       <Placeholder as="p" animation="wave">
         <Placeholder xs={12} />
       </Placeholder>
-                </div><div className="card"  style={{height:"20vh"}}>
+                </div><div Class="card"  style={{height:"20vh"}}>
    <Placeholder as="p" animation="glow">
         <Placeholder xs={12} />
       </Placeholder>
@@ -45,7 +45,7 @@ export default function ProductsDiv(){
         <Placeholder xs={12} />
       </Placeholder>
                 </div>
-                < div className="card" style={{height:"20vh"}}>
+                < div Class="card" style={{height:"20vh"}}>
    <Placeholder as="p" animation="glow" >
         <Placeholder xs={12} />
         <Placeholder xs={12} />

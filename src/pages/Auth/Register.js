@@ -62,8 +62,8 @@ async function HandelSubmit(e){
 
 }
     return(
-        <div className="containerr">
-          <div className="login_Register">
+        <div Class="containerr">
+          <div Class="login_Register">
                <form>
             <h2 className='type'>Register now </h2>
             <input  className='name' type="text" name="name" placeholder="Enter your name" value={form.name} onChange={(event)=>HandelInputs(event)} required minLength={6}></input>
@@ -74,7 +74,7 @@ async function HandelSubmit(e){
               <label className='pass'>  Password </label>
              <button className='register' onClick={(event)=>{HandelSubmit(event)}}>Register</button>
            </form>
-           <Link to={"/login"} className='tologin'> <sapn className='have'>Log in <i className="fa-solid fa-arrow-right fa-bounce"></i></sapn></Link>
+           <Link to={"/login"} className='tologin'> <sapn className='have'>Log in <i Class="fa-solid fa-arrow-right fa-bounce"></i></sapn></Link>
 
           </div>
           {loader &&  <Laoder/>}

@@ -109,8 +109,8 @@ function HandelDelete(id){
         
         
     return(
-    <div className="users" >
-        <div className="action">
+    <div Class="users" >
+        <div Class="action">
            <h3 className='userstype'>All Users</h3>
          <Button className='primary'  variant="primary" type="submit" >
                  <Link  style={{color:"white"}}to={"add"}>Add uers</Link>
@@ -118,7 +118,7 @@ function HandelDelete(id){
         </div>
 
     <TableComp  limet = {limet} haeder={hederTable} data={users} action={HandelDelete} deletes={"user"} courentUser={curentuser.id} type={"users"} showLoader={showLoader}/>
-   <div className="contpaginetion">
+   <div Class="contpaginetion">
     <Form.Select style={{width:"20vh"}} aria-label="Default select example" onChange={(ele)=>{
        if(ele.target.value<= users.length){
          setnumberElement(Number(ele.target.value)) 

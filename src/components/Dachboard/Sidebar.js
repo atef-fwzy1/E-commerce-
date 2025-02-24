@@ -26,24 +26,24 @@ export default function Sidebare(){
     },[])
     return(
         <div className={`side_bar ${menu?"openn":"noopenn"}`} style={{width:menu.isOpen?"20%":"fit-content"}}>
-               <div className="links">
+               <div Class="links">
                    <ul>
                     {user.role === "1995"&&
                             <>
-                  <li onClick={()=>setMenue((prive)=>!prive)} style={{justifyContent:menu.isOpen?"":"center"}}><NavLink end  style={{marginLeft:"0px"}}to="users"><span className="textLink">Users<span className="textLink"></span></span><i style={{fontSize:menu.isOpen?"18px":"25px"}} className="fa-solid fa-users"></i></NavLink></li>
-                    <li onClick={()=>setMenue((prive)=>!prive)} style={{justifyContent:menu.isOpen?"":"center"}}><NavLink end  style={{marginLeft:"0px"}}to="users/add"><span className="textLink">AddUser<span className="textLink"></span></span><i style={{fontSize:menu.isOpen?"18px":"25px"}} className="fa-solid fa-user-plus"></i></NavLink></li>
+                  <li onClick={()=>setMenue((prive)=>!prive)} style={{justifyContent:menu.isOpen?"":"center"}}><NavLink end  style={{marginLeft:"0px"}}to="users"><span Class="textLink">Users<span Class="textLink"></span></span><i style={{fontSize:menu.isOpen?"18px":"25px"}} Class="fa-solid fa-users"></i></NavLink></li>
+                    <li onClick={()=>setMenue((prive)=>!prive)} style={{justifyContent:menu.isOpen?"":"center"}}><NavLink end  style={{marginLeft:"0px"}}to="users/add"><span Class="textLink">AddUser<span Class="textLink"></span></span><i style={{fontSize:menu.isOpen?"18px":"25px"}} Class="fa-solid fa-user-plus"></i></NavLink></li>
                             </>
                     }
-                    <li onClick={()=>setMenue((prive)=>!prive)} style={{justifyContent:menu.isOpen?"":"center"}}><NavLink end style={{marginLeft:"0px"}}to="categories"><span className="textLink">Categ</span><i style={{fontSize:menu.isOpen?"18px":"25px"}} class="fa-solid fa-bullhorn"></i></NavLink></li>
-                    <li  onClick={()=>setMenue((prive)=>!prive)} style={{justifyContent:menu.isOpen?"":"center"}}><NavLink  style={{marginLeft:"0px"}}to="categories/addCategorie"><span className="textLink">Add Categ</span> <i style={{fontSize:menu.isOpen?"18px":"25px"}} className="fa-solid fa-plus"></i></NavLink></li>
+                    <li onClick={()=>setMenue((prive)=>!prive)} style={{justifyContent:menu.isOpen?"":"center"}}><NavLink end style={{marginLeft:"0px"}}to="categories"><span Class="textLink">Categ</span><i style={{fontSize:menu.isOpen?"18px":"25px"}} Class="fa-solid fa-bullhorn"></i></NavLink></li>
+                    <li  onClick={()=>setMenue((prive)=>!prive)} style={{justifyContent:menu.isOpen?"":"center"}}><NavLink  style={{marginLeft:"0px"}}to="categories/addCategorie"><span Class="textLink">Add Categ</span> <i style={{fontSize:menu.isOpen?"18px":"25px"}} Class="fa-solid fa-plus"></i></NavLink></li>
                       <li onClick={()=>setMenue((prive)=>!prive)} style={{justifyContent:menu.isOpen?"":"center"}}><NavLink end style={{marginLeft:"0px"}} to="products">
-                        <span   className="textLink">Products</span><i  style={{fontSize:menu.isOpen?"18px":"25px"}}  class="fa-solid fa-cart-plus"></i></NavLink></li>
-                    <li onClick={()=>setMenue((prive)=>!prive)} style={{justifyContent:menu.isOpen?"":"center"}}><NavLink style={{marginLeft:"0px"}} to="products/addproduct"><span className="textLink">AddProduct<span className="textLink"></span></span><i style={{fontSize:menu.isOpen?"18px":"25px"}} className="fa-solid fa-folder-plus"></i></NavLink></li>
+                        <span   Class="textLink">Products</span><i  style={{fontSize:menu.isOpen?"18px":"25px"}}  Class="fa-solid fa-cart-plus"></i></NavLink></li>
+                    <li onClick={()=>setMenue((prive)=>!prive)} style={{justifyContent:menu.isOpen?"":"center"}}><NavLink style={{marginLeft:"0px"}} to="products/addproduct"><span Class="textLink">AddProduct<span Class="textLink"></span></span><i style={{fontSize:menu.isOpen?"18px":"25px"}} Class="fa-solid fa-folder-plus"></i></NavLink></li>
                  
                    </ul>
                </div>
                <i onClick={()=>setMenue((prive)=>!prive)}className={`rightButton fa-solid fa-angles-${menu?"left":"right"}`}></i>
-                <NavLink to={"/"}><i style={{fontSize:"30px"}} class="fa-solid fa-house"></i></NavLink>
+                <NavLink to={"/"}><i style={{fontSize:"30px"}} Class="fa-solid fa-house"></i></NavLink>
         </div>
     )
 }

@@ -36,8 +36,8 @@ categories.map((ele,ind)=>{
         )
     })
        return <div class={`nav-menu ${open && openMenu?"open":""}`}>
-                <i class=" closemenu fa-solid fa-circle-xmark" onClick={()=>setopen(false)}></i>
-             <ul className="linkesCyegoried">
+                <i Class=" closemenu fa-solid fa-circle-xmark" onClick={()=>setopen(false)}></i>
+             <ul Class="linkesCyegoried">
               {links}
              </ul>
                         
