@@ -160,13 +160,13 @@ left: -28%;
                 }
 }
 .topbard .dropdown {
-background-color: transparent;
+background-color: initial;
+    border-color: #000;
     border-radius: 50%;
-    color: black;
+    color: #000;
+    height: fit-content;
     padding: 0;
-    width: 40px ;
-    height: 40px;
-    border-color: black;
+    width: fit-content;
     z-index: 7;
 }
 .topbard .cart{
