@@ -21,7 +21,7 @@ export default function DetilsCategories(){
 
       const showlatest= products.map((ele,ind)=>{
           if(ele.category  == Id )
-            return <NewCard  element={ele}  img={"https://e-commerce-backend-production-8649.up.railway.app"+ele.images[0]}title={ele.title}des={ele.description}price={ele.price}disc={ele.discount}rating={ele.rating}  id={ele.id} />
+            return <NewCard  element={ele}  img={"https://e-commerce-backend-production-c659.up.railway.app"+ele.images[0]}title={ele.title}des={ele.description}price={ele.price}disc={ele.discount}rating={ele.rating}  id={ele.id} />
         })
     return(
        <>

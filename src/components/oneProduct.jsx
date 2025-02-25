@@ -8,7 +8,7 @@ export default function OneProduct(){
      const[images,setImages] = useState("")
 
     useEffect(()=>{
-      axios.get("https://e-commerce-backend-production-8649.up.railway.app/api/latest-sale").then((data)=>{
+      axios.get("https://e-commerce-backend-production-c659.up.railway.app/api/latest-sale").then((data)=>{
     setlatest(data.data[Math.floor(Math.random() * data.data.length) + 0])
    setImages((data.data[Math.floor(Math.random() * data.data.length) + 0]).images[0].image)
   }).catch((err)=>console.log(err))
@@ -22,7 +22,7 @@ export default function OneProduct(){
                    <span>{latest.description}</span>
                      <NavLink to={`product/${latest.id}`}> <Button className='Shop_Now'  variant="secondary">Shop Now</Button></NavLink>
               </div>
-              <img src={`https://e-commerce-backend-production-8649.up.railway.app${images}`} alt="errr"/>
+              <img src={`https://e-commerce-backend-production-c659.up.railway.app${images}`} alt="errr"/>
         </div>
     )
 }

@@ -21,7 +21,7 @@ const [detials,setDetails]=useState({description:"",discount:"",price:"",title:"
     // console.log(detials)
 useEffect(()=>{
  const res = async()=>{
-     await axios("https://e-commerce-backend-production-8649.up.railway.app/api/product/"+id.id).then((data)=>setDetails(data.data[0])).catch((err)=>console.log(err))
+     await axios("https://e-commerce-backend-production-c659.up.railway.app/api/product/"+id.id).then((data)=>setDetails(data.data[0])).catch((err)=>console.log(err))
  }
  res()
 },[])

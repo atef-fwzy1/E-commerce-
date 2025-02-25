@@ -20,7 +20,7 @@ updated_at: "2025-0000Z"}}){
 				    	<div class="product-card">
 						<div class="badge">Hot</div>
 		<div className="product-tumb">
-			<img src={`${img.image}`} alt=""/>
+			<img src={`https://e-commerce-backend-production-c659.up.railway.app${img.image}`} alt=""/>
 		</div>
 		<div class="product-details">
 			<h4><a href="#">{title}</a></h4>

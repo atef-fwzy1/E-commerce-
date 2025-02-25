@@ -9,7 +9,7 @@ export default function GoogleCallBack(){
      function CallBack(){
           useEffect(()=>{
      
-        axios.get("https://e-commerce-backend-production-8649.up.railway.app/api/auth/google/callback"+location.search)
+        axios.get("https://e-commerce-backend-production-c659.up.railway.app/api/auth/google/callback"+location.search)
        .then((res)=>{
          console.log(res)
          cookie.set("cookie",res.data.access_token)

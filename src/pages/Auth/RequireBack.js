@@ -8,7 +8,7 @@ export default function RequireBack({Auth}){
         useEffect(()=>{
           const token = cookie.get("cookie")
           let autho =async ()=>{
-              await axios.get("https://e-commerce-backend-production-8649.up.railway.app/api/user",{
+              await axios.get("https://e-commerce-backend-production-c659.up.railway.app/api/user",{
                   headers:{
                       Authorization:"Bearer " +token
                     }

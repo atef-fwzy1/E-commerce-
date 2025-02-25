@@ -36,7 +36,7 @@ async function HandelSubmit(e){
   try{
     if(form.name.length >= 3 && form.email.length >= 5 ){
     setloader(true)
-    await axios.post("https://e-commerce-backend-production-8649.up.railway.app/api/register",form)
+    await axios.post("https://e-commerce-backend-production-c659.up.railway.app/api/register",form)
     .then((e)=>{
       setloader(false)
    HndelAlert.setIsopen({state:true,text:"Registration ",type:"good"})

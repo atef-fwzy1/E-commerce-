@@ -47,7 +47,7 @@ cart?.map((ele,ind)=>{
           <p Class="itemNumber">#-{ele.id}</p>
           <h3>{ele.title}</h3>
         
-           <p> <input type="text"  Class="qty" /> <img style={{height:"70px"}} src={`https://e-commerce-backend-production-8649.up.railway.app${ele.images[0].image}`} alt="err" /></p>
+           <p> <input type="text"  Class="qty" /> <img style={{height:"70px"}} src={`https://e-commerce-backend-production-c659.up.railway.app${ele.images[0].image}`} alt="err" /></p>
         
           <p Class="stockStatus"> In Stock</p>
         </div>  

@@ -10,7 +10,7 @@ export default function Sidebare(){
      const [user,setuser] = useState([])
          useEffect(()=>{
           const token = Cookie()
-       axios.get("https://e-commerce-backend-production-8649.up.railway.app/api/user",{
+       axios.get("https://e-commerce-backend-production-c659.up.railway.app/api/user",{
         headers:{
             Authorization:"Bearer " +token.get("cookie")
         }

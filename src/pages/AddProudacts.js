@@ -135,7 +135,7 @@ export default function AddProuducts(){
     const showImages =  images.map((ele,ind)=>{ 
  return( 
   <div className='image_cont'>
-       <img src={URL.createObjectURL(images[ind])} alt='error'></img>
+       <img src={URL(images[ind])} alt='error'></img>
     <div>
          <h2>{images[ind].name}</h2>
          <span className='size'>{images[ind].size / 102 < 900 ?(images[ind].size / 1024).toFixed(1)+" KB":(images[ind].size /( 1024  * 1024)).toFixed(1) + " MB"}</span>

@@ -11,7 +11,7 @@ export default function ProductsCard({img={image:""},title,des,price,disc,rating
  <NavLink  to={`product/${id}`}> 
   <div Class="card">
         <div Class="img">
-          <img src={`https://e-commerce-backend-production-8649.up.railway.app/${img.image}`} alt="No Photos" />
+          <img src={`https://e-commerce-backend-production-c659.up.railway.app${img.image}`} alt="No Photos" />
         </div>
         <div Class="text">
           <h3>{title.slice(0,15)}</h3>
