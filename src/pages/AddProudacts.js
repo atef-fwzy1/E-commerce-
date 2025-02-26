@@ -85,7 +85,7 @@ export default function AddProuducts(){
               formdata.append("images[]",images[i])
             }
             Axios.post("/product/edit/" +product_id,formdata).then((res)=>{
-              console.log(res)
+
                 navigate("/dashboard/products")
           }).catch((err)=>{
                 console.log(err)

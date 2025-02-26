@@ -34,8 +34,7 @@ export default function TableComp({haeder,data=[],courentUser="" ,action,showLoa
         limetData.push(data[i]);
         }
         const finelDat = searchData.length !== 0 ?searchData:limetData
-        console.log(searchData.length)
-        // const finelDat = limetData
+ 
         
         let showtabelcontent = [];
            if(finelDat.length >  0){

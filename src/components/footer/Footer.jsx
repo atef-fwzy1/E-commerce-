@@ -48,9 +48,9 @@ export default function  Footer(){
                             </div>
                             <div Class="footer-social-icon" style={{margin:" 16px 0px"}}>
                                 <span>Follow us</span>
-                                <a href="#"><i Class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i Class="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i Class="fab fa-google-plus-g google-bg"></i></a>
+                                <a href="https://dev-atef.netlify.app/"><i Class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="https://dev-atef.netlify.app/"><i Class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="https://dev-atef.netlify.app/"><i Class="fab fa-google-plus-g google-bg"></i></a>
                             </div>
                         </div>
                     </div>
@@ -63,10 +63,10 @@ export default function  Footer(){
                                 <li><a href="#">Home</a></li>
                                <li><NavLink to="/about">About Us</NavLink></li>
                                 <li><NavLink to="/about">services</NavLink></li>
-                                <li><NavLink href="#">portfolio</NavLink></li>
+                                <li><NavLink href="https://dev-atef.netlify.app/">portfolio</NavLink></li>
                                 <li><NavLink href="https://mail.google.com/mail/u/0/#inbox">Contact</NavLink></li>
-                                <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="https://dev-atef.netlify.app/">Our Services</a></li>
+                                <li><a href="https://dev-atef.netlify.app/">Expert Team</a></li>
                                  <li><NavLink to="/about">Contact us</NavLink></li>
                                 <li><a href="#">Latest News</a></li>
                             </ul>
