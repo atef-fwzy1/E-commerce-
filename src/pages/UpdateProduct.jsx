@@ -98,7 +98,7 @@ export default function UpdateProduct(){
  return( 
   <div className='image_cont Updateimage_cont'>
     {
-        ele.image+"".includes("http")?<img src={ele.image} alt='error'></img>:<img  src={URL.createObjectURL(ele)} alt='error'></img>
+        ele.image+"".includes("http")?<img src={`https://e-commerce-backend-production-c659.up.railway.app${ele.image}`} alt='error'></img>:<img  src={URL.createObjectURL(ele)} alt='error'></img>
         
     }
 

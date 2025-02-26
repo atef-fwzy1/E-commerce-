@@ -28,7 +28,7 @@ useEffect(()=>{
 
 const images = [];
  detials.images.map((ele,ind)=>{
-    images.push({   original:ele.image,thumbnail:ele.image})
+    images.push({ original:"https://e-commerce-backend-production-c659.up.railway.app"+ele.image,thumbnail:"https://e-commerce-backend-production-c659.up.railway.app"+ele.image})
  })
 
     return(

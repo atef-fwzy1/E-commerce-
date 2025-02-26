@@ -25,7 +25,7 @@ export default function ProductsDiv(){
         
     return(
         <div Class="Prod_cont">
-                <h2 Class="latest">latest sale products</h2>
+                <h2 Class="latest">Random products</h2>
             <section id="products">
                  {showProdcuts.length >0 ?showProdcuts:
                 

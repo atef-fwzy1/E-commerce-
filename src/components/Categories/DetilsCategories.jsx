@@ -8,7 +8,7 @@ export default function DetilsCategories(){
     const [products,setProducts] = useState([])
 
     const [Id,SetId] =useState( useParams().id)
-  console.log(Id)
+
 
     useEffect(()=>{
       SetId(window.location.pathname.slice(-2))
@@ -18,10 +18,11 @@ export default function DetilsCategories(){
        Axios.get("/products").then((data)=>setProducts(data.data.reverse())).catch((err)=>console.log(err))
     },[]) 
      
-
-      const showlatest= products.map((ele,ind)=>{
-          if(ele.category  == Id )
-            return <NewCard  element={ele}  img={"https://e-commerce-backend-production-c659.up.railway.app"+ele.images[0]}title={ele.title}des={ele.description}price={ele.price}disc={ele.discount}rating={ele.rating}  id={ele.id} />
+ let showlatest=[]
+      products.map((ele,ind)=>{
+   
+          if(ele.category  === +Id.slice(1))
+               showlatest.push(<NewCard  element={ele}  img={ele.images[0]}title={ele.title}des={ele.description}price={ele.price}disc={ele.discount}rating={ele.rating}  id={ele.id} />)
         })
     return(
        <>
@@ -32,7 +33,7 @@ export default function DetilsCategories(){
 
         {showlatest}
        </div>  
-       <NavLink to={'/'}  style={{margin:"auto",width:"fit-content", height:"fit-content"}}>
+       <NavLink to={'/'}  style={{margin:"auto",width:"fit-content", height:"fit-content", display: "block"}}>
              <Button value={"Go to Home "}/>
        </NavLink>
         </>
