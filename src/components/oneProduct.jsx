@@ -22,7 +22,7 @@ export default function OneProduct(){
                    <span>{latest.description}</span>
                      <NavLink to={`product/${latest.id}`}> <Button className='Shop_Now'  variant="secondary">Shop Now</Button></NavLink>
               </div>
-              <img src={`https://e-commerce-backend-production-c659.up.railway.app${images}`} alt="errr"/>
+              <img src={`https://e-commerce-backend-production-c659.up.railway.app${images}`} style={{height:"30vh"}} alt="errr"/>
         </div>
     )
 }
